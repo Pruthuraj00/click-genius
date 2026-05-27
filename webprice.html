@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Web Development Services | Click Genius</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" type="image/png" href="C:\Projects\click genius\logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        [data-weight="fill"] .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid #E2E8F0;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "inverse-surface": "#283044",
+                        "surface": "#faf8ff",
+                        "secondary-fixed": "#dae1ff",
+                        "surface-container-highest": "#dae2fd",
+                        "secondary-container": "#0266ff",
+                        "surface-variant": "#dae2fd",
+                        "surface-container": "#eaedff",
+                        "primary-container": "#1a365d",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "tertiary-container": "#27374b",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#90a0b9",
+                        "tertiary": "#112235",
+                        "on-secondary-fixed-variant": "#003fa4",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#e2e7ff",
+                        "primary-fixed-dim": "#adc7f7",
+                        "on-secondary-fixed": "#001849",
+                        "background": "#faf8ff",
+                        "secondary": "#0050cc",
+                        "surface-tint": "#455f88",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "on-primary-fixed": "#001b3c",
+                        "on-secondary-container": "#f9f7ff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "primary": "#002045",
+                        "surface-dim": "#d2d9f4",
+                        "inverse-primary": "#adc7f7",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "surface-bright": "#faf8ff",
+                        "tertiary-fixed": "#d3e4fe",
+                        "on-surface": "#131b2e",
+                        "on-background": "#131b2e",
+                        "inverse-on-surface": "#eef0ff",
+                        "surface-container-low": "#f2f3ff",
+                        "outline": "#74777f",
+                        "on-primary-container": "#86a0cd",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#43474e",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "md": "24px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none z-50">
+        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-[1200px] mx-auto w-full">
+            <a class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed"
+                href="#">Click Genius</a>
+            <div class="hidden md:flex items-center gap-lg">
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
+                    href="C:\Projects\click genius\index.html">Home</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
+                    href="C:\Projects\click genius\services.html">Services</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
+                    href="C:\Projects\click genius\portfolio.html">Portfolio</a>
+                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
+                    href="C:\Projects\click genius\contac.html">Contact</a>
+            </div>
+            <button
+                class="bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform">Get
+                Started</button>
+        </div>
+    </nav>
+    <main class="pt-32 pb-xl">
+        <!-- Hero Section -->
+        <section class="max-w-[1200px] mx-auto px-margin-desktop text-center mb-xl">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-md">Professional Web Solutions for High-Growth
+                Brands</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+                Deploy high-performance web architecture designed for conversion and built to scale. Select from our
+                specialized service range.
+            </p>
+            <div class="flex justify-center items-center gap-sm">
+                <span
+                    class="inline-flex items-center px-sm py-xs rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm">
+                    <span class="material-symbols-outlined mr-xs text-[16px]">bolt</span> Momentum-Driven Tech
+                </span>
+                <span
+                    class="inline-flex items-center px-sm py-xs rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm">
+                    <span class="material-symbols-outlined mr-xs text-[16px]">verified</span> Corporate Grade Quality
+                </span>
+            </div>
+        </section>
+        <!-- Services Grid -->
+        <section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-md">
+                <!-- Service 1 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">corporate_fare</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Business Website Development</h4>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">web_asset</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Landing Page Design</h4>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">shopping_cart</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">E-Commerce Website Development</h4>
+                </div>
+                <!-- Service 4 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">photo_library</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Portfolio Website Development</h4>
+                </div>
+                <!-- Service 5 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">refresh</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Website Redesign Services</h4>
+                </div>
+                <!-- Service 6 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">search</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">SEO Optimization</h4>
+                </div>
+                <!-- Service 7 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">support_agent</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Website Maintenance &amp; Support</h4>
+                </div>
+                <!-- Service 8 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">dns</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Domain &amp; Hosting Setup</h4>
+                </div>
+                <!-- Service 9 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">calendar_month</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">Booking &amp; Appointment System</h4>
+                </div>
+                <!-- Service 10 -->
+                <div
+                    class="glass-card p-md rounded-xl hover:border-secondary transition-all duration-300 flex flex-col items-center text-center group cursor-default">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center mb-sm text-secondary-fixed group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined text-[28px]">smart_toy</span>
+                    </div>
+                    <h4 class="font-label-md text-label-md text-primary">AI &amp; Automation Integration</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Comparison Table Section -->
+        <section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+            <h2 class="font-headline-lg text-headline-lg text-primary text-center mb-lg">Full Feature Breakdown</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-surface-container border-b border-outline-variant">
+                            <th class="p-md font-label-md text-label-md text-on-surface-variant">Feature</th>
+                            <th class="p-md font-label-md text-label-md text-primary">Basic Layer</th>
+                            <th class="p-md font-label-md text-label-md text-secondary">Momentum Layer</th>
+                            <th class="p-md font-label-md text-label-md text-primary">Viral Layer</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-outline-variant">
+                        <tr>
+                            <td class="p-md font-body-md font-semibold text-primary">Tech Stack</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Standard CMS (WP/Wix)</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Next.js / Headless CMS</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Custom Full-Stack Architecture</td>
+                        </tr>
+                        <tr>
+                            <td class="p-md font-body-md font-semibold text-primary">Pages Included</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Up to 3</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Up to 15</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Unlimited Dynamic Pages</td>
+                        </tr>
+                        <tr>
+                            <td class="p-md font-body-md font-semibold text-primary">Performance Score</td>
+                            <td class="p-md font-body-md text-on-surface-variant">80+ PageSpeed</td>
+                            <td class="p-md font-body-md text-on-surface-variant">90+ PageSpeed</td>
+                            <td class="p-md font-body-md text-on-surface-variant">98+ Global Edge Optimized</td>
+                        </tr>
+                        <tr>
+                            <td class="p-md font-body-md font-semibold text-primary">Support Level</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Email (48h response)</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Dedicated Manager (24h)</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Priority Slack / 24/7 Call</td>
+                        </tr>
+                        <tr>
+                            <td class="p-md font-body-md font-semibold text-primary">AI Integration</td>
+                            <td class="p-md font-body-md text-on-surface-variant">—</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Chatbot Fundamentals</td>
+                            <td class="p-md font-body-md text-on-surface-variant">Full Workflow Automation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- Final CTA Section -->
+        <section class="max-w-[1200px] mx-auto px-margin-desktop mb-xl">
+            <div class="relative h-[300px] rounded-xl overflow-hidden group">
+                <img alt="Modern tech office" class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJuYUD9NMNsFuJVdmwv3J6_SYLPQ7p9DtQVbOZTSsu9doTRqpTpCFUxlkmOu5DeoQcu0DXdsM88wYCURBEPODNq2EwGuo482J5y7L6C_VRyusOO19vU1Yzq4N-L4xGWpYzpe5KGhTm_6yLC8FTllTyY4yXfTY5hJZxu4z1rhihFVBFw66nU84qegxDUs2FVUu7gou7nhgke_6Ow9Ivpb5EszSeDFM98vTsTAPehhJhnwYZkV_ApCwJjy8z8VHr4ZZRh1Au9due_zZC" />
+                <div class="absolute inset-0 bg-primary/90 flex flex-col items-center justify-center text-center px-lg">
+                    <h2 class="font-headline-xl text-headline-xl text-white mb-md">Ready to build your digital fortress?
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-secondary-fixed mb-lg max-w-2xl">Join 200+ businesses
+                        scaling their presence with Click Genius architecture.</p>
+                    <a href="https://clickgenius8jwp.setmore.com/services/3590fb77-0f9f-4958-a2ca-df648ebba429"
+                        target="_blank">
+                        <button
+                            class="bg-secondary text-on-secondary px-xl py-md rounded-lg font-headline-md text-headline-md hover:scale-105 transition-transform duration-300">
+                            Contact Us to build any of these websites
+                        </button>
+                    </a>
+                </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-tertiary dark:bg-tertiary-container w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-desktop max-w-[1200px] mx-auto w-full">
+            <div class="space-y-md">
+                <span class="text-headline-md font-headline-md font-bold text-tertiary-fixed">Click Genius</span>
+                <p class="text-on-tertiary-container font-body-md">
+                    Leading social media marketing agency in Vadodara. Specialized in paid advertising, creative
+                    content, and data-driven scaling.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-md">
+                <div class="flex flex-col gap-sm">
+                    <span class="text-tertiary-fixed font-label-md mb-xs">Services</span>
+                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
+                        href="#">Digital Marketing</a>
+                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
+                        href="#">Website Development</a>
+                </div>
+                <div class="flex flex-col gap-sm">
+                    <span class="text-tertiary-fixed font-label-md mb-xs">Company</span>
+                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
+                        href="C:\Projects\click genius\portfolio.html">Portfolio</a>
+                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
+                        href="C:\Projects\click genius\contac.html">Contact Us</a>
+                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
+                        href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="space-y-md">
+                <span class="text-tertiary-fixed font-label-md mb-xs">Connect</span>
+                <div class="flex gap-md">
+                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
+                        href="mailto:clickgenius.info@gmail.com">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                    </a>
+                </div>
+                <p class="text-on-tertiary-container font-label-sm pt-md">© 2024 Click Genius. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.classList.add('scale-95');
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.classList.remove('scale-95');
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body>
+
+</html>
