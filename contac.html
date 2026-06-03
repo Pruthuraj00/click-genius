@@ -131,30 +131,23 @@
 
 <body class="bg-background text-on-surface overflow-x-hidden">
     <!-- TopNavBar -->
-   <nav
-        class="fixed top-0 w-full bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none z-50">
+    <nav class="hidden md:flex items-center gap-lg">
         <div
-            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full">
-            <div class="flex items-center gap-base">
-                <img alt="Click Genius Logo" class="h-10 w-auto"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFtAxl5YFR4BQ8yYccyFfgVbGq-NIO5oaKrBIYWWFMj4broa4q7kKL2oQFynX53fIEHfHk9kPAmmqzQ-B1COGwukac9_7ZHaAZYoHF62I98Xr8iFT3-qgAB_xRJxeoNKOWf3AH92PagQ4sRFma-yRgDFTzNtAN5LJS9kvFG3zyJd_s9VAp3_dOLL3DBD-i9pM3TlAOJJAaLvpliB1wuftxp00OA2c9UlNdFo_nTfj9j1PmharCZbt4hTf9NiJViPt1WIed8Ly49RJH">
-                <span
-                    class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed">Click
-                    Genius</span>
-            </div>
+            class="flex justify-between items-center h-full px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full">
+            <div class="text-headline-md font-headline-md font-extrabold text-primary">Click Genius</div>
             <div class="hidden md:flex items-center gap-lg">
-                <a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 transition-opacity duration-200"
+                <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md transition-opacity duration-200"
                     href="index.html">Home</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200"
+                <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md transition-opacity duration-200"
                     href="services.html">Services</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200"
+                <a class="text-on-surface-variant hover:text-secondary font-label-md text-label-md transition-opacity duration-200"
                     href="portfolio.html">Portfolio</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200"
+                <a class="text-secondary font-bold border-b-2 border-secondary pb-1 font-label-md text-label-md"
                     href="contac.html">Contact</a>
             </div>
             <button
-                class="bg-secondary text-on-secondary px-md py-sm rounded-lg font-label-md active:scale-95 transition-transform hover:opacity-80">
-                Let's Get Started
+                class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-label-md text-label-md hover:opacity-80 transition-opacity active:scale-95">
+                Get Started
             </button>
         </div>
     </nav>
