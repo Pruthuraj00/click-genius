@@ -1,179 +1,49 @@
 <!DOCTYPE html>
-
 <html class="light" lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Our Services - Click Genius</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="icon" type="image/png" href="C:\Projects\click genius\logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-primary-fixed-variant": "#2d476f",
-                        "on-primary-fixed": "#001b3c",
-                        "outline": "#74777f",
-                        "tertiary": "#112235",
-                        "on-secondary-fixed-variant": "#003fa4",
-                        "secondary-fixed-dim": "#b3c5ff",
-                        "on-error-container": "#93000a",
-                        "primary": "#002045",
-                        "inverse-primary": "#adc7f7",
-                        "surface-tint": "#455f88",
-                        "surface-container-highest": "#dae2fd",
-                        "on-background": "#131b2e",
-                        "secondary": "#0050cc",
-                        "on-tertiary-fixed": "#0b1c30",
-                        "on-secondary-container": "#f9f7ff",
-                        "secondary-container": "#0266ff",
-                        "on-error": "#ffffff",
-                        "on-primary": "#ffffff",
-                        "surface-container-low": "#f2f3ff",
-                        "error-container": "#ffdad6",
-                        "on-tertiary-fixed-variant": "#38485d",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed": "#001849",
-                        "surface-bright": "#faf8ff",
-                        "on-secondary": "#ffffff",
-                        "surface-container": "#eaedff",
-                        "outline-variant": "#c4c6cf",
-                        "tertiary-container": "#27374b",
-                        "primary-container": "#1a365d",
-                        "primary-fixed-dim": "#adc7f7",
-                        "error": "#ba1a1a",
-                        "surface-container-lowest": "#ffffff",
-                        "on-surface": "#131b2e",
-                        "surface-dim": "#d2d9f4",
-                        "background": "#faf8ff",
-                        "tertiary-fixed": "#d3e4fe",
-                        "primary-fixed": "#d6e3ff",
-                        "secondary-fixed": "#dae1ff",
-                        "on-primary-container": "#86a0cd",
-                        "on-tertiary-container": "#90a0b9",
-                        "inverse-on-surface": "#eef0ff",
-                        "on-surface-variant": "#43474e",
-                        "inverse-surface": "#283044",
-                        "surface": "#faf8ff",
-                        "surface-container-high": "#e2e7ff",
-                        "surface-variant": "#dae2fd",
-                        "tertiary-fixed-dim": "#b7c8e1"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "lg": "48px",
-                        "md": "24px",
-                        "margin-mobile": "16px",
-                        "base": "8px",
-                        "xs": "4px",
-                        "gutter": "24px",
-                        "margin-desktop": "64px",
-                        "xl": "80px",
-                        "sm": "12px"
-                    },
-                    "fontFamily": {
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "label-md": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Plus Jakarta Sans"],
-                        "headline-lg-mobile": ["Plus Jakarta Sans"],
-                        "headline-xl": ["Plus Jakarta Sans"],
-                        "body-md": ["Plus Jakarta Sans"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "label-sm": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
-                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
-                    }
-                },
-            },
+            darkMode:"class",
+            theme:{extend:{"colors":{"on-primary-fixed-variant":"#2d476f","on-primary-fixed":"#001b3c","outline":"#74777f","tertiary":"#112235","on-secondary-fixed-variant":"#003fa4","secondary-fixed-dim":"#b3c5ff","on-error-container":"#93000a","primary":"#002045","inverse-primary":"#adc7f7","surface-tint":"#455f88","surface-container-highest":"#dae2fd","on-background":"#131b2e","secondary":"#0050cc","on-tertiary-fixed":"#0b1c30","on-secondary-container":"#f9f7ff","secondary-container":"#0266ff","on-error":"#ffffff","on-primary":"#ffffff","surface-container-low":"#f2f3ff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#38485d","on-tertiary":"#ffffff","on-secondary-fixed":"#001849","surface-bright":"#faf8ff","on-secondary":"#ffffff","surface-container":"#eaedff","outline-variant":"#c4c6cf","tertiary-container":"#27374b","primary-container":"#1a365d","primary-fixed-dim":"#adc7f7","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-surface":"#131b2e","surface-dim":"#d2d9f4","background":"#faf8ff","tertiary-fixed":"#d3e4fe","primary-fixed":"#d6e3ff","secondary-fixed":"#dae1ff","on-primary-container":"#86a0cd","on-tertiary-container":"#90a0b9","inverse-on-surface":"#eef0ff","on-surface-variant":"#43474e","inverse-surface":"#283044","surface":"#faf8ff","surface-container-high":"#e2e7ff","surface-variant":"#dae2fd","tertiary-fixed-dim":"#b7c8e1"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"lg":"48px","md":"24px","margin-mobile":"16px","base":"8px","xs":"4px","gutter":"24px","margin-desktop":"64px","xl":"80px","sm":"12px"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}]}}}
         }
     </script>
     <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #faf8ff;
-        }
-
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid #E2E8F0;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0px 10px 30px rgba(26, 54, 93, 0.08);
-            transition: all 0.3s ease;
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #faf8ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(12px); border: 1px solid #E2E8F0; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0px 10px 30px rgba(26,54,93,0.08); transition: all 0.3s ease; }
     </style>
 </head>
 
 <body class="text-on-surface selection:bg-secondary selection:text-white">
-    <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none z-50">
-        <div
-            class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto w-full">
-            <div class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed">Click
-                Genius</div>
-            <div class="hidden md:flex items-center gap-lg">
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200 font-body-md text-body-md"
-                    href="index.html">Home</a>
-                <a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary dark:border-secondary-fixed-dim pb-1 font-body-md text-body-md"
-                    href="services.html">Services</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200 font-body-md text-body-md"
-                    href="portfolio.html">Portfolio</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim hover:opacity-80 transition-opacity duration-200 font-body-md text-body-md"
-                    href="contac.html">Contact</a>
-            </div>
-            <button
-                class="bg-secondary text-on-secondary px-md py-sm rounded-lg font-label-md text-label-md hover:opacity-80 transition-opacity active:scale-95 transition-transform">Get
-                Started</button>
-        </div>
-    </nav>
+
+    <!-- ✦ SHARED HEADER ✦ -->
+    <div id="header-placeholder"></div>
+
     <main class="pt-20">
         <!-- Hero Section -->
         <section class="bg-primary text-white py-xl px-margin-mobile md:px-margin-desktop">
             <div class="max-w-[1200px] mx-auto text-center">
                 <h1 class="font-headline-xl text-headline-xl mb-md">Strategic Solutions for Modern Growth</h1>
-                <p class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-primary-container">We combine deep
-                    analytical expertise with high-energy creative strategies to scale your brand across the digital
-                    landscape.</p>
+                <p class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-primary-container">We combine deep analytical expertise with high-energy creative strategies to scale your brand across the digital landscape.</p>
             </div>
         </section>
+
         <!-- Services Overview -->
         <section class="py-xl px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
             <div class="text-center mb-xl">
-                <div
-                    class="inline-block px-md py-xs rounded-full border border-secondary text-secondary font-label-md text-label-md mb-md uppercase tracking-wider">
-                    Expertise</div>
+                <div class="inline-block px-md py-xs rounded-full border border-secondary text-secondary font-label-md text-label-md mb-md uppercase tracking-wider">Expertise</div>
                 <h2 class="font-headline-xl text-headline-xl italic text-primary">What We Offer</h2>
             </div>
-            <!-- Digital Marketing Section -->
+
+            <!-- Digital Marketing -->
             <div class="mb-xl overflow-hidden rounded-2xl bg-white border border-outline-variant service-card">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-lg md:p-xl flex flex-col justify-center">
@@ -181,167 +51,69 @@
                             <span class="material-symbols-outlined text-headline-md">campaign</span>
                             <h3 class="font-headline-lg text-headline-lg">Digital Marketing</h3>
                         </div>
-                        <p class="font-body-lg text-on-surface-variant mb-lg">
-                            Elevate your brand presence with data-driven marketing strategies. We don't just generate
-                            traffic; we drive meaningful engagement and conversions that impact your bottom line. Our
-                            holistic approach ensures your brand stays ahead in a competitive digital landscape.
-                        </p>
+                        <p class="font-body-lg text-on-surface-variant mb-lg">Elevate your brand presence with data-driven marketing strategies. We don't just generate traffic; we drive meaningful engagement and conversions that impact your bottom line.</p>
                         <ul class="font-body-md text-on-surface-variant space-y-base mb-lg">
-                            <li class="flex items-center gap-sm"><span
-                                    class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                                Strategic Social Media Management</li>
-                            <li class="flex items-center gap-sm"><span
-                                    class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                                Advanced SEO &amp; Content Marketing</li>
-                            <li class="flex items-center gap-sm"><span
-                                    class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                                Targeted Paid Advertising (PPC)</li>
-                            <li class="flex items-center gap-sm"><span
-                                    class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                                Creative Campaign Direction</li>
+                            <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Strategic Social Media Management</li>
+                            <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Advanced SEO &amp; Content Marketing</li>
+                            <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Targeted Paid Advertising (PPC)</li>
+                            <li class="flex items-center gap-sm"><span class="material-symbols-outlined text-secondary text-base">check_circle</span>Creative Campaign Direction</li>
                         </ul>
-                        <div>
-                            <a class="inline-flex items-center gap-sm text-secondary font-label-md hover:underline"
-                                href="C:\Projects\click genius\pricing.html">
-                                View Detailed Pricing
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </a>
-                        </div>
+                        <a class="inline-flex items-center gap-sm text-secondary font-label-md hover:underline" href="pricing.html">
+                            View Detailed Pricing <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
-                    <div class="bg-surface-container-high flex items-center justify-center"><img
-                            alt="Modern digital marketing team working on strategy"
-                            class="w-full h-full object-cover rounded-xl shadow-sm"
-                            src="C:\Projects\click genius\digital.png" />
+                    <div class="bg-surface-container-high flex items-center justify-center">
+                        <img alt="Digital marketing team" class="w-full h-full object-cover rounded-xl shadow-sm" src="digital.png">
                     </div>
                 </div>
             </div>
-            <!-- Web Development Section -->
+
+            <!-- Web Development -->
             <div class="mb-xl overflow-hidden rounded-2xl bg-white border border-outline-variant service-card">
                 <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="bg-primary/5 flex items-center justify-center order-2 md:order-1"><img
-                            alt="High-end web development setup" class="w-full h-full object-cover rounded-xl shadow-sm"
-                            src="C:\Projects\click genius\webdev.png" />
+                    <div class="bg-primary/5 flex items-center justify-center order-2 md:order-1">
+                        <img alt="Web development setup" class="w-full h-full object-cover rounded-xl shadow-sm" src="webdev.png">
                     </div>
                     <div class="p-lg md:p-xl flex flex-col justify-center order-1 md:order-2">
                         <div class="flex items-center gap-sm text-primary mb-md">
                             <span class="material-symbols-outlined text-headline-md">terminal</span>
                             <h3 class="font-headline-lg text-headline-lg">Web Development</h3>
                         </div>
-                        <p class="font-body-lg text-on-surface-variant mb-lg">
-                            We build high-performance, custom web solutions tailored to your unique business needs. From
-                            sleek landing pages to complex web applications, our development team prioritizes speed,
-                            security, and an exceptional user experience across all devices.
-                        </p>
+                        <p class="font-body-lg text-on-surface-variant mb-lg">We build high-performance, custom web solutions tailored to your unique business needs. From sleek landing pages to complex web applications.</p>
                         <div class="grid grid-cols-1 gap-md mb-lg">
-                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl">
-                                <span class="material-symbols-outlined text-secondary">devices</span>
-                                <div>
-                                    <h4 class="font-label-md text-primary">Responsive Design</h4>
-                                    <p class="text-label-sm text-on-surface-variant">Seamless experiences on mobile,
-                                        tablet, and desktop.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl">
-                                <span class="material-symbols-outlined text-secondary">bolt</span>
-                                <div>
-                                    <h4 class="font-label-md text-primary">Performance Optimization</h4>
-                                    <p class="text-label-sm text-on-surface-variant">Lightning-fast load speeds for
-                                        better SEO and retention.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl">
-                                <span class="material-symbols-outlined text-secondary">settings_suggest</span>
-                                <div>
-                                    <h4 class="font-label-md text-primary">Custom Solutions</h4>
-                                    <p class="text-label-sm text-on-surface-variant">Tailored functionality that grows
-                                        with your business.</p>
-                                </div>
-                            </div>
+                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl"><span class="material-symbols-outlined text-secondary">devices</span><div><h4 class="font-label-md text-primary">Responsive Design</h4><p class="text-label-sm text-on-surface-variant">Seamless experiences on mobile, tablet, and desktop.</p></div></div>
+                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl"><span class="material-symbols-outlined text-secondary">bolt</span><div><h4 class="font-label-md text-primary">Performance Optimization</h4><p class="text-label-sm text-on-surface-variant">Lightning-fast load speeds for better SEO and retention.</p></div></div>
+                            <div class="flex gap-md p-md bg-surface-container-low rounded-xl"><span class="material-symbols-outlined text-secondary">settings_suggest</span><div><h4 class="font-label-md text-primary">Custom Solutions</h4><p class="text-label-sm text-on-surface-variant">Tailored functionality that grows with your business.</p></div></div>
                         </div>
-                        <div>
-                            <a class="inline-flex items-center gap-sm text-secondary font-label-md hover:underline"
-                                href="C:\Projects\click genius\webprice.html">
-                                View Detailed Pricing
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </a>
-                        </div>
+                        <a class="inline-flex items-center gap-sm text-secondary font-label-md hover:underline" href="webprice.html">
+                            View Detailed Pricing <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- CTA Section -->
         <section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low">
             <div class="max-w-[1200px] mx-auto text-center">
-                <div
-                    class="inline-block px-md py-xs rounded-full bg-secondary/10 text-secondary font-label-md text-label-md mb-md">
-                    Ready to Scale?</div>
+                <div class="inline-block px-md py-xs rounded-full bg-secondary/10 text-secondary font-label-md text-label-md mb-md">Ready to Scale?</div>
                 <h2 class="font-headline-xl text-headline-xl mb-md">Get a customized growth audit</h2>
-                <p class="font-body-lg text-body-lg mb-lg text-on-surface-variant max-w-xl mx-auto">Discover the
-                    untapped potential in your digital presence with a data-driven overview from our senior strategists.
-                </p>
+                <p class="font-body-lg text-body-lg mb-lg text-on-surface-variant max-w-xl mx-auto">Discover the untapped potential in your digital presence with a data-driven overview from our senior strategists.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-md">
-                    <a href="https://clickgenius8jwp.setmore.com/services/05558919-5c44-46f3-b9a1-e459499b66a8"
-                        target="_blank">
-                        <button
-                            class="bg-secondary text-white px-xl py-md rounded-lg font-headline-md text-headline-md shadow-lg hover:opacity-90 transition-opacity">
-                            Schedule a Growth Audit
-                        </button>
+                    <a href="https://clickgenius8jwp.setmore.com/services/05558919-5c44-46f3-b9a1-e459499b66a8" target="_blank">
+                        <button class="bg-secondary text-white px-xl py-md rounded-lg font-headline-md text-headline-md shadow-lg hover:opacity-90 transition-opacity">Schedule a Growth Audit</button>
                     </a>
-
-                    <a href="C:\Projects\click genius\contac.html" target="_blank">
-                        <button
-                            class="border border-primary text-primary px-xl py-md rounded-lg font-headline-md text-headline-md hover:bg-primary hover:text-white transition-all">
-                            Contact Us
-                        </button>
+                    <a href="contac.html">
+                        <button class="border border-primary text-primary px-xl py-md rounded-lg font-headline-md text-headline-md hover:bg-primary hover:text-white transition-all">Contact Us</button>
                     </a>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-tertiary dark:bg-tertiary-container w-full">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-desktop max-w-[1200px] mx-auto w-full">
-            <div class="space-y-md">
-                <span class="text-headline-md font-headline-md font-bold text-tertiary-fixed">Click Genius</span>
-                <p class="text-on-tertiary-container font-body-md">
-                    Leading social media marketing agency in Vadodara. Specialized in paid advertising, creative
-                    content, and data-driven scaling.
-                </p>
-            </div>
-            <div class="grid grid-cols-2 gap-md">
-                <div class="flex flex-col gap-sm">
-                    <span class="text-tertiary-fixed font-label-md mb-xs">Services</span>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Digital Marketing</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Website Development</a>
-                </div>
-                <div class="flex flex-col gap-sm">
-                    <span class="text-tertiary-fixed font-label-md mb-xs">Company</span>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="C:\Projects\click genius\portfolio.html">Portfolio</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="C:\Projects\click genius\contac.html">Contact Us</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Privacy Policy</a>
-                </div>
-            </div>
-            <div class="space-y-md">
-                <span class="text-tertiary-fixed font-label-md mb-xs">Connect</span>
-                <div class="flex gap-md">
-                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
-                        href="#">
-                        <span class="material-symbols-outlined">public</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
-                        href="mailto:clickgenius.info@gmail.com">
-                        <span class="material-symbols-outlined">alternate_email</span>
-                    </a>
-                </div>
-                <p class="text-on-tertiary-container font-label-sm pt-md">© 2024 Click Genius. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
 
+    <!-- ✦ SHARED FOOTER ✦ -->
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
+</body>
 </html>

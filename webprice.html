@@ -128,26 +128,8 @@
 
 <body class="bg-background text-on-background font-body-md">
     <!-- TopNavBar -->
-    <nav
-        class="fixed top-0 w-full bg-surface dark:bg-surface-dim border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none z-50">
-        <div class="flex justify-between items-center h-20 px-margin-desktop max-w-[1200px] mx-auto w-full">
-            <a class="text-headline-md font-headline-md font-extrabold text-primary dark:text-primary-fixed"
-                href="#">Click Genius</a>
-            <div class="hidden md:flex items-center gap-lg">
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
-                    href="index.html">Home</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
-                    href="services.html">Services</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
-                    href="portfolio.html">Portfolio</a>
-                <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-opacity duration-200"
-                    href="contac.html">Contact</a>
-            </div>
-            <button
-                class="bg-secondary text-on-secondary px-lg py-sm rounded-full font-label-md text-label-md hover:opacity-80 transition-opacity duration-200 active:scale-95 transition-transform">Get
-                Started</button>
-        </div>
-    </nav>
+    <div id="header-placeholder"></div>
+
     <main class="pt-32 pb-xl">
         <!-- Hero Section -->
         <section class="max-w-[1200px] mx-auto px-margin-desktop text-center mb-xl">
@@ -331,61 +313,22 @@
                 </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-tertiary dark:bg-tertiary-container w-full">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-desktop max-w-[1200px] mx-auto w-full">
-            <div class="space-y-md">
-                <span class="text-headline-md font-headline-md font-bold text-tertiary-fixed">Click Genius</span>
-                <p class="text-on-tertiary-container font-body-md">
-                    Leading social media marketing agency in Vadodara. Specialized in paid advertising, creative
-                    content, and data-driven scaling.
-                </p>
-            </div>
-            <div class="grid grid-cols-2 gap-md">
-                <div class="flex flex-col gap-sm">
-                    <span class="text-tertiary-fixed font-label-md mb-xs">Services</span>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Digital Marketing</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Website Development</a>
-                </div>
-                <div class="flex flex-col gap-sm">
-                    <span class="text-tertiary-fixed font-label-md mb-xs">Company</span>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="C:\Projects\click genius\portfolio.html">Portfolio</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="C:\Projects\click genius\contac.html">Contact Us</a>
-                    <a class="text-on-tertiary-container hover:text-tertiary-fixed hover:underline transition-all"
-                        href="#">Privacy Policy</a>
-                </div>
-            </div>
-            <div class="space-y-md">
-                <span class="text-tertiary-fixed font-label-md mb-xs">Connect</span>
-                <div class="flex gap-md">
-                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
-                        href="#">
-                        <span class="material-symbols-outlined">public</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full border border-on-tertiary-container flex items-center justify-center text-on-tertiary-container hover:border-tertiary-fixed hover:text-tertiary-fixed transition-all"
-                        href="mailto:clickgenius.info@gmail.com">
-                        <span class="material-symbols-outlined">alternate_email</span>
-                    </a>
-                </div>
-                <p class="text-on-tertiary-container font-label-sm pt-md">© 2024 Click Genius. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    
+    <div id="footer-placeholder"></div>
+
+    <script src="components.js"></script>
     <script>
-        document.querySelectorAll('button').forEach(btn => {
-            btn.addEventListener('mousedown', () => {
-                btn.classList.add('scale-95');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
             });
-            btn.addEventListener('mouseup', () => {
-                btn.classList.remove('scale-95');
-            });
-            btn.addEventListener('mouseleave', () => {
-                btn.classList.remove('scale-95');
-            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.group').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
         });
     </script>
 </body>
