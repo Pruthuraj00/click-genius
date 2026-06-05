@@ -66,42 +66,43 @@
                 <h2 class="font-headline-lg text-headline-lg mb-base text-primary">Send a Message</h2>
                 <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Fields marked with an asterisk (*)
                     are required.</p>
-                <form class="space-y-md" id="contactForm" action="https://formspree.io/f/meewonoa" method="POST">
+                <form class="space-y-md" id="contactForm">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
                         <div class="space-y-xs">
                             <label class="font-label-md text-label-md text-on-surface">Full Name *</label>
                             <input
                                 class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
-                                placeholder="John Doe" required type="text" name="name">
-                            <div class="space-y-xs">
-                                <label class="font-label-md text-label-md text-on-surface">Email Address *</label>
-                                <input
-                                    class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
-                                    placeholder="john@example.com" required type="email" name="email">
-                            </div>
+                                placeholder="John Doe" required type="text">
                         </div>
                         <div class="space-y-xs">
-                            <label class="font-label-md text-label-md text-on-surface">Subject</label>
-                            <select name="subject"
-                                class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none appearance-none">
-                                <option>Social Media Marketing</option>
-                                <option>Content Strategy</option>
-                                <option>Data Analytics</option>
-                                <option>General Inquiry</option>
-                            </select>
+                            <label class="font-label-md text-label-md text-on-surface">Email Address *</label>
+                            <input
+                                class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
+                                placeholder="john@example.com" required type="email">
                         </div>
-                        <div class="space-y-xs">
-                            <label class="font-label-md text-label-md text-on-surface">Your Message *</label>
-                            <textarea name="message"
-                                class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none resize-none"
-                                placeholder="How can we help your business grow?" required rows="5"></textarea>
-                        </div>
-                        <button
-                            class="w-full bg-secondary text-on-secondary font-headline-md text-headline-md py-4 rounded-lg hover:opacity-90 transition-all active:scale-[0.98] flex justify-center items-center gap-base"
-                            type="submit">
-                            Send Strategy Request
-                            <span class="material-symbols-outlined">send</span>
-                        </button>
+                    </div>
+                    <div class="space-y-xs">
+                        <label class="font-label-md text-label-md text-on-surface">Subject</label>
+                        <select
+                            class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none appearance-none">
+                            <option>Social Media Marketing</option>
+                            <option>Content Strategy</option>
+                            <option>Data Analytics</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="space-y-xs">
+                        <label class="font-label-md text-label-md text-on-surface">Your Message *</label>
+                        <textarea
+                            class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none resize-none"
+                            placeholder="How can we help your business grow?" required rows="5"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-secondary text-on-secondary font-headline-md text-headline-md py-4 rounded-lg hover:opacity-90 transition-all active:scale-[0.98] flex justify-center items-center gap-base"
+                        type="submit">
+                        Send Strategy Request
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
                 </form>
             </div>
 
