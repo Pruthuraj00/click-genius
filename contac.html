@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact Us | Click Genius</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="icon" type="image/png" href="logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {"on-primary-fixed-variant":"#2d476f","on-primary-fixed":"#001b3c","outline":"#74777f","tertiary":"#112235","on-secondary-fixed-variant":"#003fa4","secondary-fixed-dim":"#b3c5ff","on-error-container":"#93000a","primary":"#002045","inverse-primary":"#adc7f7","surface-tint":"#455f88","surface-container-highest":"#dae2fd","on-background":"#131b2e","secondary":"#0050cc","on-tertiary-fixed":"#0b1c30","on-secondary-container":"#f9f7ff","secondary-container":"#0266ff","on-error":"#ffffff","on-primary":"#ffffff","surface-container-low":"#f2f3ff","error-container":"#ffdad6","on-tertiary-fixed-variant":"#38485d","on-tertiary":"#ffffff","on-secondary-fixed":"#001849","surface-bright":"#faf8ff","on-secondary":"#ffffff","surface-container":"#eaedff","outline-variant":"#c4c6cf","tertiary-container":"#27374b","primary-container":"#1a365d","primary-fixed-dim":"#adc7f7","error":"#ba1a1a","surface-container-lowest":"#ffffff","on-surface":"#131b2e","surface-dim":"#d2d9f4","background":"#faf8ff","tertiary-fixed":"#d3e4fe","primary-fixed":"#d6e3ff","secondary-fixed":"#dae1ff","on-primary-container":"#86a0cd","on-tertiary-container":"#90a0b9","inverse-on-surface":"#eef0ff","on-surface-variant":"#43474e","inverse-surface":"#283044","surface":"#faf8ff","surface-container-high":"#e2e7ff","surface-variant":"#dae2fd","tertiary-fixed-dim":"#b7c8e1"},
-                    "borderRadius": {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},
-                    "spacing": {"lg":"48px","md":"24px","margin-mobile":"16px","base":"8px","xs":"4px","gutter":"24px","margin-desktop":"64px","xl":"80px","sm":"12px"},
-                    "fontFamily": {"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},
-                    "fontSize": {"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}]}
+                    "colors": { "on-primary-fixed-variant": "#2d476f", "on-primary-fixed": "#001b3c", "outline": "#74777f", "tertiary": "#112235", "on-secondary-fixed-variant": "#003fa4", "secondary-fixed-dim": "#b3c5ff", "on-error-container": "#93000a", "primary": "#002045", "inverse-primary": "#adc7f7", "surface-tint": "#455f88", "surface-container-highest": "#dae2fd", "on-background": "#131b2e", "secondary": "#0050cc", "on-tertiary-fixed": "#0b1c30", "on-secondary-container": "#f9f7ff", "secondary-container": "#0266ff", "on-error": "#ffffff", "on-primary": "#ffffff", "surface-container-low": "#f2f3ff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#38485d", "on-tertiary": "#ffffff", "on-secondary-fixed": "#001849", "surface-bright": "#faf8ff", "on-secondary": "#ffffff", "surface-container": "#eaedff", "outline-variant": "#c4c6cf", "tertiary-container": "#27374b", "primary-container": "#1a365d", "primary-fixed-dim": "#adc7f7", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "surface-dim": "#d2d9f4", "background": "#faf8ff", "tertiary-fixed": "#d3e4fe", "primary-fixed": "#d6e3ff", "secondary-fixed": "#dae1ff", "on-primary-container": "#86a0cd", "on-tertiary-container": "#90a0b9", "inverse-on-surface": "#eef0ff", "on-surface-variant": "#43474e", "inverse-surface": "#283044", "surface": "#faf8ff", "surface-container-high": "#e2e7ff", "surface-variant": "#dae2fd", "tertiary-fixed-dim": "#b7c8e1" },
+                    "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    "spacing": { "lg": "48px", "md": "24px", "margin-mobile": "16px", "base": "8px", "xs": "4px", "gutter": "24px", "margin-desktop": "64px", "xl": "80px", "sm": "12px" },
+                    "fontFamily": { "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] },
+                    "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }] }
                 },
             },
         }
     </script>
     <style>
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .custom-shadow { box-shadow: 0px 10px 30px rgba(26,54,93,0.08); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .custom-shadow {
+            box-shadow: 0px 10px 30px rgba(26, 54, 93, 0.08);
+        }
     </style>
 </head>
 
@@ -37,9 +48,11 @@
     <!-- Hero Section -->
     <header class="pt-32 pb-xl bg-primary-container text-on-primary">
         <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
-            <h1 class="font-headline-xl text-headline-xl mb-md">Let's Fuel Your <span class="text-secondary-fixed-dim">Growth</span></h1>
+            <h1 class="font-headline-xl text-headline-xl mb-md">Let's Fuel Your <span
+                    class="text-secondary-fixed-dim">Growth</span></h1>
             <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mx-auto">
-                Ready to dominate social media with data-backed strategies? Reach out to our team of experts in Vadodara and start your journey today.
+                Ready to dominate social media with data-backed strategies? Reach out to our team of experts in Vadodara
+                and start your journey today.
             </p>
         </div>
     </header>
@@ -48,23 +61,30 @@
     <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop -mt-20 relative z-10 mb-xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-lg">
             <!-- Contact Form Card -->
-            <div class="lg:col-span-7 bg-surface-container-lowest rounded-xl border border-outline-variant p-md md:p-lg custom-shadow">
+            <div
+                class="lg:col-span-7 bg-surface-container-lowest rounded-xl border border-outline-variant p-md md:p-lg custom-shadow">
                 <h2 class="font-headline-lg text-headline-lg mb-base text-primary">Send a Message</h2>
-                <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Fields marked with an asterisk (*) are required.</p>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-lg">Fields marked with an asterisk (*)
+                    are required.</p>
                 <form class="space-y-md" id="contactForm">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
                         <div class="space-y-xs">
                             <label class="font-label-md text-label-md text-on-surface">Full Name *</label>
-                            <input class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" placeholder="John Doe" required type="text">
+                            <input
+                                class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
+                                placeholder="John Doe" required type="text">
                         </div>
                         <div class="space-y-xs">
                             <label class="font-label-md text-label-md text-on-surface">Email Address *</label>
-                            <input class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none" placeholder="john@example.com" required type="email">
+                            <input
+                                class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none"
+                                placeholder="john@example.com" required type="email">
                         </div>
                     </div>
                     <div class="space-y-xs">
                         <label class="font-label-md text-label-md text-on-surface">Subject</label>
-                        <select class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none appearance-none">
+                        <select
+                            class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none appearance-none">
                             <option>Social Media Marketing</option>
                             <option>Content Strategy</option>
                             <option>Data Analytics</option>
@@ -73,9 +93,13 @@
                     </div>
                     <div class="space-y-xs">
                         <label class="font-label-md text-label-md text-on-surface">Your Message *</label>
-                        <textarea class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none resize-none" placeholder="How can we help your business grow?" required rows="5"></textarea>
+                        <textarea
+                            class="w-full bg-white border border-outline-variant rounded px-4 py-3 focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all outline-none resize-none"
+                            placeholder="How can we help your business grow?" required rows="5"></textarea>
                     </div>
-                    <button class="w-full bg-secondary text-on-secondary font-headline-md text-headline-md py-4 rounded-lg hover:opacity-90 transition-all active:scale-[0.98] flex justify-center items-center gap-base" type="submit">
+                    <button
+                        class="w-full bg-secondary text-on-secondary font-headline-md text-headline-md py-4 rounded-lg hover:opacity-90 transition-all active:scale-[0.98] flex justify-center items-center gap-base"
+                        type="submit">
                         Send Strategy Request
                         <span class="material-symbols-outlined">send</span>
                     </button>
@@ -88,43 +112,52 @@
                     <h3 class="font-headline-md text-headline-md text-primary mb-md">Contact Information</h3>
                     <ul class="space-y-md">
                         <li class="flex gap-md">
-                            <div class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
                                 <span class="material-symbols-outlined text-secondary-fixed-dim">location_on</span>
                             </div>
                             <div>
                                 <p class="font-label-md text-label-md text-on-surface-variant">Office Location</p>
-                                <p class="font-body-md text-body-md text-on-surface">402 High-Tech Business Park, Alkapuri, Vadodara, Gujarat 390007, India</p>
+                                <p class="font-body-md text-body-md text-on-surface">Vadodara, Gujarat 390004, India</p>
                             </div>
                         </li>
                         <li class="flex gap-md">
-                            <div class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
                                 <span class="material-symbols-outlined text-secondary-fixed-dim">call</span>
                             </div>
                             <div>
                                 <p class="font-label-md text-label-md text-on-surface-variant">Call Us</p>
                                 <p class="font-body-md text-body-md text-on-surface">+91 70168 32677</p>
+                                <p class="font-body-md text-body-md text-on-surface">+91 70965 88023</p>
                             </div>
                         </li>
                         <li class="flex gap-md">
-                            <div class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="h-12 w-12 rounded-lg bg-primary-container flex items-center justify-center flex-shrink-0">
                                 <span class="material-symbols-outlined text-secondary-fixed-dim">mail</span>
                             </div>
                             <div>
                                 <p class="font-label-md text-label-md text-on-surface-variant">Email Support</p>
-                                <p class="font-body-md text-body-md text-on-surface"><a href="mailto:clickgenius.info@gmail.com" class="hover:underline text-secondary">clickgenius.info@gmail.com</a></p>
+                                <p class="font-body-md text-body-md text-on-surface"><a
+                                        href="mailto:clickgenius.info@gmail.com"
+                                        class="hover:underline text-secondary">clickgenius.info@gmail.com</a></p>
                             </div>
                         </li>
                     </ul>
                     <div class="mt-lg pt-lg border-t border-outline-variant">
                         <p class="font-label-md text-label-md text-on-surface-variant mb-md">Follow our insights</p>
                         <div class="flex gap-md">
-                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform" href="https://www.instagram.com/thaijase.design/" target="_blank">
+                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform"
+                                href="https://www.instagram.com/clickgenius.in/" target="_blank">
                                 <span class="material-symbols-outlined">photo_camera</span>
                             </a>
-                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform" href="mailto:clickgenius.info@gmail.com">
+                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform"
+                                href="mailto:clickgenius.info@gmail.com">
                                 <span class="material-symbols-outlined">alternate_email</span>
                             </a>
-                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform" href="#">
+                            <a class="h-10 w-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center hover:scale-110 transition-transform"
+                                href="#">
                                 <span class="material-symbols-outlined">public</span>
                             </a>
                         </div>
@@ -136,8 +169,10 @@
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzzTcUlZh6cYuF5MLENKErkKOfwqTGgZvo7JfMexEio9pEEcYAJeEqijzvGe1OrOfDWbiiN9AKf8NJdHCI2AbqpZUpMs0F3EsgSnNr1UBL6kjNs874wA_jRaWUqQDM6-gkBbZdF916tppGCVZYx4XYnxfluHl7_hwcubEMdI73LFGKPUJPUx19iqhvpyRICYHfm2XDFtWfPeZjzGpZdxxiujvTATOS8SzrPL4ZVTCYXHuPVbOfiwkiqGHoKR9R6CLdF36cLa4wTTG"
                         alt="Vadodara map">
                     <div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
-                        <a href="https://maps.google.com/?q=Alkapuri,Vadodara,Gujarat" target="_blank" class="bg-white/90 px-6 py-2 rounded-full shadow-lg flex items-center gap-base hover:bg-white transition-colors">
-                            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">location_on</span>
+                        <a href="https://maps.google.com/?q=Alkapuri,Vadodara,Gujarat" target="_blank"
+                            class="bg-white/90 px-6 py-2 rounded-full shadow-lg flex items-center gap-base hover:bg-white transition-colors">
+                            <span class="material-symbols-outlined text-secondary"
+                                style="font-variation-settings:'FILL' 1;">location_on</span>
                             <span class="font-label-md text-label-md text-primary">View on Google Maps</span>
                         </a>
                     </div>
@@ -173,4 +208,5 @@
         });
     </script>
 </body>
+
 </html>
